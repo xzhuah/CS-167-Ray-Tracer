@@ -1,0 +1,15 @@
+﻿  vec3.cpp
+d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\vec3.cpp(40): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  ray.cpp
+d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\point.h(2): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+  point.cpp
+d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\point.h(2): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+  normal.cpp
+d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\normal.cpp(33): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  matrix44.cpp
+  main.cpp
+  color.cpp
+  camera.cpp
+  正在生成代码...
+  HW4.vcxproj -> D:\myGithub\C++Workspace\CS-167-Ray-Tracer\Debug\HW4.exe
+  HW4.vcxproj -> D:\myGithub\C++Workspace\CS-167-Ray-Tracer\Debug\HW4.pdb (Partial PDB)

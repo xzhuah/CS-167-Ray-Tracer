@@ -1,0 +1,8 @@
+﻿  point.cpp
+d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\point.h(2): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+main.obj : error LNK2019: 无法解析的外部符号 __imp_FreeImage_Initialise，该符号在函数 "public: void __cdecl pixel_image::outputImage(char const *)" (?outputImage@pixel_image@@QEAAXPEBD@Z) 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 __imp_FreeImage_DeInitialise，该符号在函数 "public: void __cdecl pixel_image::outputImage(char const *)" (?outputImage@pixel_image@@QEAAXPEBD@Z) 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 __imp_FreeImage_Save，该符号在函数 "public: void __cdecl pixel_image::outputImage(char const *)" (?outputImage@pixel_image@@QEAAXPEBD@Z) 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 __imp_FreeImage_ConvertFromRawBits，该符号在函数 "public: void __cdecl pixel_image::outputImage(char const *)" (?outputImage@pixel_image@@QEAAXPEBD@Z) 中被引用
+FreeImage.lib : warning LNK4272: 库计算机类型“X86”与目标计算机类型“x64”冲突
+D:\myGithub\C++Workspace\CS-167-Ray-Tracer\x64\Debug\HW4.exe : fatal error LNK1120: 4 个无法解析的外部命令
