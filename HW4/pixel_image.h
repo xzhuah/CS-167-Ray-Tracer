@@ -1,6 +1,7 @@
 #pragma once
 #include "pixel.h"
 #include "FreeImage.h"
+
 class pixel_image {
 public:
 	int width;
@@ -12,6 +13,7 @@ public:
 		this->height = height;
 		image = new pixel[width*height];
 	}
+	
 
 	void outputImage(const char* filename) {
 		FreeImage_Initialise();

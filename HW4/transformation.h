@@ -1,6 +1,6 @@
 #pragma once
 #include "matrix44.h"
-#include "vec3.h"
+#include "Vec3.h"
 #include "normal.h"
 #include "point.h"
 #include "ray.h"
@@ -9,7 +9,7 @@ public:
 	matrix44 m, mivet;
 	transformation(matrix44&);
 
-	vec3 doTransform(const vec3&) const;
+	Vec3 doTransform(const Vec3&) const;
 	normal doTransform(const normal&) const;
 	point doTransform(const point&) const;
 	ray doTransform(const ray&) const;

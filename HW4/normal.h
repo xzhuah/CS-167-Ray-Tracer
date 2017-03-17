@@ -1,54 +1,79 @@
-#include "vec3.h"
+#pragma once
+#include "Vec3.h"
 class normal {
 public:
 	float x, y, z;
-	normal(float, float, float);
-	normal operator+ (const normal&) const;//Need to be normalized after operations (Be careful for 0 vector)
-	normal operator- (const normal&) const;//Need to be normalized after operations (Be careful for 0 vector)
-	normal operator+ (const vec3&) const;//Need to be normalized after operations (Be careful for 0 vector)
-	normal operator- (const vec3&) const;//Need to be normalized after operations (Be careful for 0 vector)
+	normal() {
+		x = 0;
+		y = 0; 
+		z = 0;
+	}
+	normal(float x, float y, float z) {
+		this->x = x;
+		this->y = y;
+		this->z = z;
+		this->normalize();
+	}
+	normal operator+ (const normal& nor) const {
+		//Need to be normalized after operations (Be careful for 0 vector)
+		normal result(nor.x + x, nor.y + y, nor.z + z);
+		return result.normalize();
+
+	};
+	normal operator- (const normal& nor) const {
+		//Need to be normalized after operations (Be careful for 0 vector)
+		normal result(nor.x - x, nor.y - y, nor.z - z);
+		return result.normalize();
+	};
+	normal operator+ (const Vec3& nor) const {
+		//Need to be normalized after operations (Be careful for 0 vector)
+		normal result(nor.x + x, nor.y + y, nor.z + z);
+		return result.normalize();
+
+	};
+	normal operator- (const Vec3& nor) const {
+		//Need to be normalized after operations (Be careful for 0 vector)
+		normal result(nor.x - x, nor.y - y, nor.z - z);
+		return result.normalize();
+	};
+
+	normal& operator= (const Vec3& other) {
+		this->x = other.x;
+		this->y = other.y;
+		this->z = other.z;
+		this->normalize();
+		return *this;
+	}
+	normal& operator= (const normal&  other) {
+		this->x = other.x;
+		this->y = other.y;
+		this->z = other.z;
+		return *this;
+	}
+
+	float getlength() {
+		float length = x*x + y*y + z*z;
+		length = pow(length, 0.5);
+		return length;
+	}
+
+	normal normalize() {
+		float length = this->getlength();
+		if (length == 0) {
+			this->x = 0;
+			this->y = 0;
+			this->z = 0;
+			Vec3 result(0, 0, 0);
+			*this = result;
+		}
+		this->x = x / length;
+		this->y = y / length;
+		this->z = z / length;
+		return *this;
+	}
+
 
 private:
-	normal normalize() const;
 
 
 };
-
-normal::normal(float x, float y, float z) {
-	this->x = x;
-	this->y = y;
-	this->z = z;
-}
-normal normal::operator+ (const normal& nor) const {
-	//Need to be normalized after operations (Be careful for 0 vector)
-	normal result(nor.x + x, nor.y + y, nor.z + z);
-	return result.normalize();
-
-}
-normal normal::operator- (const normal& nor) const {
-	//Need to be normalized after operations (Be careful for 0 vector)
-	normal result(nor.x - x, nor.y - y, nor.z - z);
-	return result.normalize();
-}
-normal normal::operator+ (const vec3& nor) const {
-	//Need to be normalized after operations (Be careful for 0 vector)
-	normal result(nor.x + x, nor.y + y, nor.z + z);
-	return result.normalize();
-
-}
-normal normal::operator- (const vec3& nor) const {
-	//Need to be normalized after operations (Be careful for 0 vector)
-	normal result(nor.x - x, nor.y - y, nor.z - z);
-	return result.normalize();
-}
-
-normal normal::normalize() const {
-	float length = x*x + y*y + z*z;
-	length = pow(length, 0.5);
-	if (length == 0) {
-		normal result(0, 0, 0);
-		return result;
-	}
-	normal result(x / length, y / length, z / length);
-	return result;
-}

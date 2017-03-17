@@ -121,18 +121,19 @@
     <ClInclude Include="camera.h" />
     <ClInclude Include="color.h" />
     <ClInclude Include="FreeImage.h" />
+    <ClInclude Include="intersection.h" />
     <ClInclude Include="matrix44.h" />
     <ClInclude Include="normal.h" />
-    <ClInclude Include="object.h" />
+    <ClInclude Include="primitive.h" />
     <ClInclude Include="pixel_image.h" />
     <ClInclude Include="point.h" />
     <ClInclude Include="ray.h" />
-    <ClInclude Include="scene.h" />
     <ClInclude Include="sphere.h" />
     <ClInclude Include="transformation.h" />
     <ClInclude Include="triangle.h" />
     <ClInclude Include="vec3.h" />
     <ClInclude Include="pixel.h" />
+    <ClInclude Include="vertexnormal.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

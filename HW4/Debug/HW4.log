@@ -1,2 +1,12 @@
-﻿  HW4.vcxproj -> D:\myGithub\C++Workspace\CS-167-Ray-Tracer\Debug\HW4.exe
-  HW4.vcxproj -> D:\myGithub\C++Workspace\CS-167-Ray-Tracer\Debug\HW4.pdb (Partial PDB)
+﻿  main.cpp
+d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\vec3.h(78): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\normal.h(56): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\sphere.h(6): error C2504: “primitive”: 未定义基类
+d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\sphere.h(14): error C3646: “findIntersection”: 未知重写说明符
+d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\sphere.h(14): error C2065: “theray”: 未声明的标识符
+d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\sphere.h(14): error C2275: “ray”: 将此类型用作表达式非法
+  d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\ray.h(6): note: 参见“ray”的声明
+d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\sphere.h(14): error C2096: "intersection": 无法使用带括号的初始值设定项初始化数据成员
+d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\sphere.h(14): error C2433: “sphere::intersection”: 不允许在数据声明中使用“virtual”
+d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\sphere.h(14): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\sphere.h(14): fatal error C1903: 无法从以前的错误中恢复；正在停止编译

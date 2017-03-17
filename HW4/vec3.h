@@ -1,73 +1,86 @@
-
+#pragma once
 #include <cmath>
-class vec3 {
+class Vec3 {
 public:
 	float x;
 	float y;
 	float z;
 
-	vec3(float, float, float);
-	vec3();
+	Vec3(float x, float y, float z) {
+		this->x = x;
+		this->y = y;
+		this->z = z;
+	};
+	Vec3() {
 
-	vec3 operator+ (const vec3&) const;
-	vec3 operator- (const vec3&) const;
-	vec3 operator* (const float) const;
-	vec3 operator/ (const float) const;
+	}
+	Vec3(const Vec3& other) {
+		this->x = other.x;
+		this->y = other.y;
+		this->z = other.z;
+	}
 
-	vec3& operator=(const vec3&);
+	Vec3 operator+ (const Vec3& vec) const {
+		Vec3 result(x + vec.x, y + vec.y, z + vec.z);
+		return result;
+	};
+	Vec3 operator - (const Vec3& vec) const {
+		Vec3 result(x - vec.x, y - vec.y, z - vec.z);
+		return result;
+	};
+	Vec3 operator* (float index) const {
+		Vec3 result(x*index, y*index, z*index);
+		return result;
+	};
+	Vec3 operator/ (float index) const {
+		Vec3 result(x / index, y / index, z / index);
+		return result;
+	};
 
-	vec3 normalize();
-	vec3 cross( const vec3&);
+
+	Vec3& operator=(const Vec3& other) {
+		this->x = other.x;
+		this->y = other.y;
+		this->z = other.z;
+		return *this;
+	};
+
+
+	Vec3 negative() const {
+		return Vec3(-this->x, -this->y, -this->z);
+	}
+
+	Vec3 normalize() {
+		float length = this->getlength();
+		if (length == 0) {
+			this->x = 0;
+			this->y = 0;
+			this->z = 0;
+			Vec3 result(0, 0, 0);
+			*this = result;
+		}
+		this->x = this->x / length;
+		this->y = this->y / length;
+		this->z = this->z / length;
+		return *this;
+	};
+	Vec3 cross(const Vec3& other) {
+		Vec3 result(this->y*other.z - this->z*other.y, this->z*other.x - this->x*other.z, this->x*other.y - this->y*other.x);
+		return result;
+	};
+
+	float dot(const Vec3& other) {
+		return this->x*other.x + this->y*other.y + this -> z*other.z;
+	}
+	float dot(const normal& other) {
+		return this->x*other.x + this->y*other.y + this->z*other.z;
+	}
+	float getlength() {
+		float length = x*x + y*y + z*z;
+		length = pow(length, 0.5);
+		return length;
+	};
 
 	
 };
 
-vec3::vec3(float x, float y, float z) {
-	this->x = x;
-	this->y = y;
-	this->z = z;
-}
-vec3::vec3() {
-	this->x = x;
-	this->y = y;
-	this->z = z;
-}
-
-vec3 vec3::operator+ (const vec3& vec) const {
-	vec3 result(x + vec.x, y + vec.y, z + vec.z);
-	return result;
-}
-vec3 vec3::operator- (const vec3& vec) const {
-	vec3 result(x - vec.x, y - vec.y, z - vec.z);
-	return result;
-}
-vec3 vec3::operator* (float index) const {
-	vec3 result(x*index, y*index, z*index);
-	return result;
-}
-vec3 vec3::operator/ (float index) const {
-	vec3 result(x / index, y / index, z / index);
-	return result;
-}
-
-vec3& vec3::operator=(const vec3& other) {
-	this->x = other.x;
-	this->y = other.y;
-	this->z = other.z;
-	return *this;
-}
-
-vec3 vec3::normalize() {
-	float length = x*x + y*y + z*z;
-	length = pow(length, 0.5);
-	if (length == 0) {
-		vec3 result(0, 0, 0);
-		return result;
-	}
-	vec3 result(x / length, y / length, z / length);
-	return result;
-}
-
-vec3 vec3::cross(const vec3& other) {
-	return vec3(this->y*other.z - this->z*other.y, this->z*other.x - this->x*other.z, this->x*other.y - this->y*other.x);
-}

@@ -3,11 +3,23 @@ class color
 {
 public:
 	float r, g, b;
+	color() {
+		this->r = 0.0f;
+		this->g = 0.0f;
+		this->b = 0.0f;
+	}
 	color(float, float ,float);
 	color operator+(const color&) const;
 	color operator-(const color&) const;
 	color operator*(float) const;
 	color operator/(float) const;
+
+
+	color& operator=(const color& other) {
+		this->r = other.r;
+		this->g = other.g;
+		this->b = other.b;
+	}
 
 
 private:
