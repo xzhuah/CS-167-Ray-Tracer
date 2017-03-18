@@ -128,9 +128,7 @@
     <ClInclude Include="pixel_image.h" />
     <ClInclude Include="point.h" />
     <ClInclude Include="ray.h" />
-    <ClInclude Include="sphere.h" />
     <ClInclude Include="transformation.h" />
-    <ClInclude Include="triangle.h" />
     <ClInclude Include="vec3.h" />
     <ClInclude Include="pixel.h" />
     <ClInclude Include="vertexnormal.h" />

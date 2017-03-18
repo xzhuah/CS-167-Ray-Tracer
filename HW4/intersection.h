@@ -1,16 +1,16 @@
 #pragma once
 #include "vertexnormal.h"
 #include "primitive.h"
-#include "sphere.h"
+
 class intersection
 {
 public:
 	vertexnormal vertex;
-	primitive* mprimitive;
+	Primitive* mprimitive;
 	intersection() {
 		
 	}
-	intersection(vertexnormal vertex, primitive* mprimitive) {
+	intersection(vertexnormal vertex, Primitive* mprimitive) {
 		this->vertex = vertex;
 		this->mprimitive = mprimitive;
 	}

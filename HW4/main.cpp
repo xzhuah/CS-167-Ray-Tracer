@@ -1,7 +1,8 @@
 #pragma once
+#include "primitive.h"
 #include "pixel_image.h"
 #include "pixel.h"
-#include "primitive.h"
+
 int main() {
 
 	int height = 300;
