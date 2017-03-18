@@ -1,11 +1,6 @@
 ﻿  main.cpp
 d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\vec3.h(79): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\intersection.h(9): error C2143: 语法错误: 缺少“;”(在“*”的前面)
-d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\intersection.h(9): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\intersection.h(9): error C2238: 意外的标记位于“;”之前
-d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\intersection.h(13): error C2061: 语法错误: 标识符“Primitive”
-d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\intersection.h(15): error C2039: “mprimitive”: 不是“intersection”的成员
-  d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\intersection.h(6): note: 参见“intersection”的声明
-d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\intersection.h(15): error C2065: “mprimitive”: 未声明的标识符
 d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\primitive.h(52): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
 d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\primitive.h(53): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  HW4.vcxproj -> D:\myGithub\C++Workspace\CS-167-Ray-Tracer\Debug\HW4.exe
+  HW4.vcxproj -> D:\myGithub\C++Workspace\CS-167-Ray-Tracer\Debug\HW4.pdb (Partial PDB)
