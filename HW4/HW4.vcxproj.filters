@@ -54,19 +54,20 @@
     <ClInclude Include="point.h">
       <Filter>头文件\element</Filter>
     </ClInclude>
-    <ClInclude Include="sphere.h">
-      <Filter>头文件\entity</Filter>
-    </ClInclude>
     <ClInclude Include="pixel_image.h">
       <Filter>头文件\tool</Filter>
     </ClInclude>
     <ClInclude Include="ray.h">
       <Filter>头文件\element</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="triangle.h">
       <Filter>头文件\entity</Filter>
     </ClInclude>
     <ClInclude Include="shape.h">
+=======
+    <ClInclude Include="primitive.h">
+>>>>>>> origin/master
       <Filter>头文件\entity</Filter>
     </ClInclude>
     <ClInclude Include="readfile.h">

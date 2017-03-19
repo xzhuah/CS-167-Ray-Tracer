@@ -1,5 +1,6 @@
 #pragma once
 #include <cmath>
+#include "normal.h"
 class Vec3 {
 public:
 	float x;
@@ -83,6 +84,10 @@ public:
 	float dot(const Vec3& other) {
 		return this->x*other.x + this->y*other.y + this -> z*other.z;
 	}
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 	float getlength() {
 		float length = x*x + y*y + z*z;
 		length = pow(length, 0.5f);

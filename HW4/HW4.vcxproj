@@ -127,11 +127,15 @@
     <ClInclude Include="pixel_image.h" />
     <ClInclude Include="point.h" />
     <ClInclude Include="ray.h" />
+<<<<<<< HEAD
     <ClInclude Include="sphere.h" />
     <ClInclude Include="Transform.h" />
     <ClInclude Include="transformation.h" />
     <ClInclude Include="triangle.h" />
     <ClInclude Include="variables.h" />
+=======
+    <ClInclude Include="transformation.h" />
+>>>>>>> origin/master
     <ClInclude Include="vec3.h" />
     <ClInclude Include="pixel.h" />
     <ClInclude Include="vertexnormal.h" />

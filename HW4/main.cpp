@@ -1,10 +1,26 @@
 #pragma once
+<<<<<<< HEAD
 #include <vector>
 #include "pixel_image.h"
 #include "pixel.h"
 #include "Shape.h"
 #include "camera.h"
 #include "variables.h"
+=======
+#include "primitive.h"
+#include "pixel_image.h"
+#include "pixel.h"
+
+int main() {
+
+	int height = 300;
+	int width = 180;
+
+	pixel_image myimage(width, height);//to out put
+
+	
+
+>>>>>>> origin/master
 
 using std::vector;
 

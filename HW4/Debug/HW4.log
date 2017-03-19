@@ -1,4 +1,5 @@
 ﻿  main.cpp
+<<<<<<< HEAD
 c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(19): error C2061: syntax error: identifier 'ray'
 c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(23): error C2061: syntax error: identifier 'ray'
 c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(20): error C2143: syntax error: missing ';' before '['
@@ -133,3 +134,10 @@ c:\users\darren\desktop\cs-167-ray-tracer\hw4\main.cpp(11): error C2065: 'up': u
 c:\users\darren\desktop\cs-167-ray-tracer\hw4\main.cpp(15): error C2065: 't_min': undeclared identifier
 c:\users\darren\desktop\cs-167-ray-tracer\hw4\main.cpp(15): error C2065: 't_max': undeclared identifier
 c:\users\darren\desktop\cs-167-ray-tracer\hw4\main.cpp(15): error C2065: 'objects': undeclared identifier
+=======
+d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\vec3.h(79): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\primitive.h(52): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\primitive.h(53): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  HW4.vcxproj -> D:\myGithub\C++Workspace\CS-167-Ray-Tracer\Debug\HW4.exe
+  HW4.vcxproj -> D:\myGithub\C++Workspace\CS-167-Ray-Tracer\Debug\HW4.pdb (Partial PDB)
+>>>>>>> origin/master
