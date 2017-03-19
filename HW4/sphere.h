@@ -1,9 +1,10 @@
 #pragma once
-#include "primitive.h"
-#include "point.h"
-#include "intersection.h"
+#include "variables.h"
+#include "Shape.h"
+#include "vertexnormal.h"
 #include <cmath>
-class sphere :public primitive {
+
+class sphere: public Shape {
 public:
 	point center;
 	float radius;
@@ -11,7 +12,7 @@ public:
 		this->center = center;
 		this->radius = radius;
 	}
-	virtual intersection findIntersection(ray& theray) {
+	virtual vertexnormal findIntersection(ray& theray) {
 		Vec3 Poc = theray.source.minus(this->center);
 		float a = theray.dir.dot(theray.dir);
 		float b = 2 * theray.dir.dot(Poc);
@@ -19,35 +20,27 @@ public:
 
 		float delta = b*b - 4 * a*c;
 
-		if (delta < 0) {
-			//Didn't intersection
-			return intersection();
+		if (delta < -EPS) {
+			return vertexnormal();
 		}
+        else if (delta >= -EPS && delta <= EPS) {
+            point inter_point = theray.calcPosi(-b/2/a);
+            Vec3 normal = inter_point.minus(this->center);
+            return vertexnormal(inter_point, glm::normalize(normal));
+        }
 		else {
 			float r1 = (-b + pow(delta, 0.5)) / 2 / a;
 			float r2 = (-b - pow(delta, 0.5)) / 2 / a;
 			if (r2 > 0) {
-				//pick the smaller
-				if (r1 != r2) {
-					//not tangent
-
-					point inter_point=theray.calcPosi(r1);
-					Vec3 normal = inter_point.minus(this->center);
-				}
-				else {
-					//tangent
-					point inter_point = theray.calcPosi(r1);
-					Vec3 normal = inter_point.minus(this->center);
-
-				}
+				point inter_point=theray.calcPosi(r2);
+				Vec3 normal = inter_point.minus(this->center);
+                return vertexnormal(inter_point, glm::normalize(normal));
 			}
-			else if (r1 > 0) {
+			else {
 				//ray source inside the sphere
 				point inter_point = theray.calcPosi(r1);
 				Vec3 normal = this->center.minus(inter_point);
-			}
-			else {
-				//no intersect
+                return vertexnormal(inter_point, glm::normalize(normal));
 			}
 		}
 	}

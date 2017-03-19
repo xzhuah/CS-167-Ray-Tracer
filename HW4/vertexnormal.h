@@ -1,10 +1,9 @@
 #pragma once
 #include "point.h"
-#include "normal.h"
 class vertexnormal {
 public:
 	point vertex;
-	normal mynormal;
+	Vec3 mynormal;
 	vertexnormal() {
 		vertex.x = 0;
 		vertex.y = 0;
@@ -21,4 +20,8 @@ public:
 		mynormal.y = ny;
 		mynormal.z = nz;
 	}
+    vertexnormal(const point& mypoint, const Vec3& mynormal) {
+        vertex = mypoint;
+        this->mynormal = mynormal;
+    }
 };

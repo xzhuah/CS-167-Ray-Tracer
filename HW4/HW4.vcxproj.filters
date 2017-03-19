@@ -39,9 +39,6 @@
     <ClInclude Include="matrix44.h">
       <Filter>头文件\math</Filter>
     </ClInclude>
-    <ClInclude Include="normal.h">
-      <Filter>头文件\element</Filter>
-    </ClInclude>
     <ClInclude Include="vertexnormal.h">
       <Filter>头文件\element</Filter>
     </ClInclude>
@@ -69,11 +66,17 @@
     <ClInclude Include="triangle.h">
       <Filter>头文件\entity</Filter>
     </ClInclude>
-    <ClInclude Include="primitive.h">
+    <ClInclude Include="shape.h">
       <Filter>头文件\entity</Filter>
     </ClInclude>
-    <ClInclude Include="intersection.h">
+    <ClInclude Include="readfile.h">
+      <Filter>头文件\tool</Filter>
+    </ClInclude>
+    <ClInclude Include="variables.h">
       <Filter>头文件\element</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>头文件\math</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

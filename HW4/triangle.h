@@ -1,7 +1,6 @@
 #pragma once
 #include "point.h"
 #include "color.h"
-#include "normal.h"
 #include "ray.h"
 #include "Vec3.h"
 #include "intersection.h"
@@ -9,13 +8,11 @@
 class triangle:public primitive {
 public:
 	point a, b, c;
-	color mcolor;
 	normal mnormal;
-	triangle(const point& a, const point& b, const point& c, const color& mcolor) {
+	triangle(const point& a, const point& b, const point& c) {
 		this->a = a;
 		this->b = b;
 		this->c = c;
-		this->mcolor = mcolor;
 
 		Vec3 ab(b.x - a.x, b.y - a.y, b.z - a.z);
 		Vec3 ac(c.x - a.x, c.y - a.y, c.z - a.z);

@@ -37,4 +37,7 @@ public:
 		this->z = poi.z;
 		return *this;
 	}
+    float getdis(const point& pt) const {
+        return sqrt((x - pt.x)*(x - pt.x) + (y - pt.y)*(y - pt.y) + (z - pt.z)*(z - pt.z));
+    }
 };

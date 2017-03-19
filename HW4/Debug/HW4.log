@@ -1,12 +1,135 @@
 ﻿  main.cpp
-d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\vec3.h(78): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\normal.h(56): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\sphere.h(6): error C2504: “primitive”: 未定义基类
-d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\sphere.h(14): error C3646: “findIntersection”: 未知重写说明符
-d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\sphere.h(14): error C2065: “theray”: 未声明的标识符
-d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\sphere.h(14): error C2275: “ray”: 将此类型用作表达式非法
-  d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\ray.h(6): note: 参见“ray”的声明
-d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\sphere.h(14): error C2096: "intersection": 无法使用带括号的初始值设定项初始化数据成员
-d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\sphere.h(14): error C2433: “sphere::intersection”: 不允许在数据声明中使用“virtual”
-d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\sphere.h(14): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
-d:\mygithub\c++workspace\cs-167-ray-tracer\hw4\sphere.h(14): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(19): error C2061: syntax error: identifier 'ray'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(23): error C2061: syntax error: identifier 'ray'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(20): error C2143: syntax error: missing ';' before '['
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(20): error C2337: 'i': attribute not found
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(20): error C2337: 'j': attribute not found
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(20): error C2059: syntax error: '='
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(24): error C2065: 'max_depth': undeclared identifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(26): error C2065: 'vertexnormal': undeclared identifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(26): error C2146: syntax error: missing ';' before identifier 'vn'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(26): error C2065: 'vn': undeclared identifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(26): error C2065: 'tmp': undeclared identifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(28): error C2065: 'objects': undeclared identifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(28): error C2228: left of '.size' must have class/struct/union
+  c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(28): note: type is 'unknown-type'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(29): error C2065: 'tmp': undeclared identifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(29): error C2065: 'objects': undeclared identifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(29): error C2228: left of '.findIntersection' must have class/struct/union
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(29): error C2065: 'myray': undeclared identifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(29): error C2228: left of '.transf' must have class/struct/union
+  c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(29): note: type is 'unknown-type'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(29): error C2653: 'glm': is not a class or namespace name
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(29): error C2228: left of '.mat4' must have class/struct/union
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(29): error C3861: 'inverse': identifier not found
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(30): error C2065: 'tmp': undeclared identifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(30): error C2228: left of '.transf' must have class/struct/union
+  c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(30): note: type is 'unknown-type'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(30): error C2065: 'objects': undeclared identifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(30): error C2228: left of '.mat4' must have class/struct/union
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(31): error C2065: 'tmp': undeclared identifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(31): error C2228: left of '.vertex' must have class/struct/union
+  c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(31): note: type is 'unknown-type'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(31): error C2065: 'myray': undeclared identifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(31): error C2228: left of '.source' must have class/struct/union
+  c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(31): note: type is 'unknown-type'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(31): error C3861: 'getdis': identifier not found
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(34): error C2065: 'vn': undeclared identifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(34): error C2065: 'tmp': undeclared identifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(39): error C2065: 'ray': undeclared identifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(39): error C2146: syntax error: missing ';' before identifier 'newray'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(39): error C2065: 'newray': undeclared identifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\pixel_image.h(39): error C2143: syntax error: missing ';' before '}'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\ray.h(33): error C2653: 'glm': is not a class or namespace name
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\ray.h(33): error C2061: syntax error: identifier 'mat4'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\shape.h(6): error C3646: 'ambient': unknown override specifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\shape.h(6): error C2143: syntax error: missing ',' before '['
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\shape.h(6): error C2143: syntax error: missing ')' before ';'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\shape.h(6): error C2238: unexpected token(s) preceding ';'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\shape.h(7): error C3646: 'diffuse': unknown override specifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\shape.h(7): error C2143: syntax error: missing ',' before '['
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\shape.h(7): error C2143: syntax error: missing ')' before ';'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\shape.h(7): error C2238: unexpected token(s) preceding ';'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\shape.h(8): error C3646: 'specular': unknown override specifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\shape.h(8): error C2143: syntax error: missing ',' before '['
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\shape.h(8): error C2143: syntax error: missing ')' before ';'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\shape.h(8): error C2238: unexpected token(s) preceding ';'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\shape.h(9): error C3646: 'emission': unknown override specifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\shape.h(9): error C2143: syntax error: missing ',' before '['
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\shape.h(9): error C2143: syntax error: missing ')' before ';'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\shape.h(9): error C2238: unexpected token(s) preceding ';'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\shape.h(10): error C3646: 'shininess': unknown override specifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\shape.h(10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\shape.h(11): error C3646: 'transform': unknown override specifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\shape.h(11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\camera.h(32): error C2065: 'fov': undeclared identifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\camera.h(33): error C2065: 'fov': undeclared identifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(10): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(12): error C2146: syntax error: missing ';' before identifier 'eye'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(13): error C2086: 'int vec3': redefinition
+  c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(12): note: see declaration of 'vec3'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(13): error C2146: syntax error: missing ';' before identifier 'up'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(15): error C2086: 'int vec3': redefinition
+  c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(12): note: see declaration of 'vec3'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(15): error C2146: syntax error: missing ';' before identifier 'eyeinit'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(16): error C2086: 'int vec3': redefinition
+  c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(12): note: see declaration of 'vec3'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(16): error C2146: syntax error: missing ';' before identifier 'upinit'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(17): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(17): error C2086: 'int vec3': redefinition
+  c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(12): note: see declaration of 'vec3'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(17): error C2146: syntax error: missing ';' before identifier 'center'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(21): error C2086: 'int vec3': redefinition
+  c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(12): note: see declaration of 'vec3'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(21): error C2146: syntax error: missing ';' before identifier 'eyeinit'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(22): error C2086: 'int vec3': redefinition
+  c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(12): note: see declaration of 'vec3'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(22): error C2146: syntax error: missing ';' before identifier 'upinit'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(23): error C2086: 'int vec3': redefinition
+  c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(12): note: see declaration of 'vec3'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(23): error C2146: syntax error: missing ';' before identifier 'center'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(34): error C2143: syntax error: missing ';' before '<'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(34): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(38): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(38): error C2146: syntax error: missing ';' before identifier 'ambient'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(39): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(39): error C2086: 'int GLfloat': redefinition
+  c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(38): note: see declaration of 'GLfloat'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(39): error C2146: syntax error: missing ';' before identifier 'diffuse'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(40): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(40): error C2086: 'int GLfloat': redefinition
+  c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(38): note: see declaration of 'GLfloat'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(40): error C2146: syntax error: missing ';' before identifier 'specular'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(41): error C2086: 'int GLfloat': redefinition
+  c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(38): note: see declaration of 'GLfloat'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(41): error C2146: syntax error: missing ';' before identifier 'emission'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(42): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(42): error C2086: 'int GLfloat': redefinition
+  c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(38): note: see declaration of 'GLfloat'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(42): error C2146: syntax error: missing ';' before identifier 'shininess'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(45): error C2143: syntax error: missing ';' before '<'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(45): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(45): error C2086: 'int vector': redefinition
+  c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(34): note: see declaration of 'vector'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(46): error C2143: syntax error: missing ';' before '<'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(46): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(46): error C2086: 'int vector': redefinition
+  c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(34): note: see declaration of 'vector'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(47): error C2143: syntax error: missing ';' before '<'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(47): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(47): error C2086: 'int vector': redefinition
+  c:\users\darren\desktop\cs-167-ray-tracer\hw4\variables.h(34): note: see declaration of 'vector'
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\main.cpp(11): error C2065: 'posi': undeclared identifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\main.cpp(11): error C2065: 'lookat': undeclared identifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\main.cpp(11): error C2065: 'up': undeclared identifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\main.cpp(15): error C2065: 't_min': undeclared identifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\main.cpp(15): error C2065: 't_max': undeclared identifier
+c:\users\darren\desktop\cs-167-ray-tracer\hw4\main.cpp(15): error C2065: 'objects': undeclared identifier

@@ -12,7 +12,7 @@ public:
 		this->z = z;
 	};
 	Vec3() {
-
+        this->x = this->y = this->z = 0.0;
 	}
 	Vec3(const Vec3& other) {
 		this->x = other.x;
@@ -64,6 +64,17 @@ public:
 		this->z = this->z / length;
 		return *this;
 	};
+
+    static Vec3 normalize(Vec3 vec) {
+        float length = vec.getlength();
+        Vec3 res(0, 0, 0);
+        if (length == 0) return res;
+        res.x = vec.x / length;
+        res.y = vec.y / length;
+        res.z = vec.z / length;
+        return res;
+    };
+
 	Vec3 cross(const Vec3& other) {
 		Vec3 result(this->y*other.z - this->z*other.y, this->z*other.x - this->x*other.z, this->x*other.y - this->y*other.x);
 		return result;
@@ -72,12 +83,9 @@ public:
 	float dot(const Vec3& other) {
 		return this->x*other.x + this->y*other.y + this -> z*other.z;
 	}
-	float dot(const normal& other) {
-		return this->x*other.x + this->y*other.y + this->z*other.z;
-	}
 	float getlength() {
 		float length = x*x + y*y + z*z;
-		length = pow(length, 0.5);
+		length = pow(length, 0.5f);
 		return length;
 	};
 
